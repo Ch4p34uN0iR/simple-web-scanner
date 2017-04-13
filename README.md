@@ -50,4 +50,4 @@ python3 scan_cli.py --seedurl http://example.com --engine xss
 
 ## Notes
 
-If you want to know how crawler works. First, you have to modify `seed_url` line 89 in file crawler, then you can run `python3 crawler.py` to run crawler.
+If you want to know how crawler works. You have to modify `seed_url` line 89 in file crawler, then you can run `python3 crawler.py` to see what happened.
