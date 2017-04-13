@@ -7,15 +7,18 @@ This is simple web application fuzzer for scanning SQL injection and XSS vulnera
 This program uses python 3. I recommend using virtualenv for testing purpose. To check our python enviroment, you can use the following commands:
 
 ```
-$ /usr/bin/python3 --version
+$ python3 --version
 Python 3.5.2
+
+$ pip3 --version
+pip 9.0.1 from /usr/local/lib/python3.5/dist-packages (python 3.5)
 ```
 
 ### Requirements packages:
 
 BeautifulSoup are used for parsing HTML content. You can install it by command:
 ```
-pip install bs4
+pip3 install bs4
 ```
 
 
