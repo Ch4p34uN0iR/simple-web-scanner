@@ -9,8 +9,6 @@ class HtmlParser(object):
     @property
     def hrefs(self):
         # find all a tag which contains href attribute
-        # for example:
-        # yield mean
         a_tags = self.soup.find_all("a", {"href": True})
         for tag in a_tags:
             yield tag['href']
