@@ -1,10 +1,15 @@
 # Simple web scanner
 
-This is simple web application fuzzer for scanning SQL injection and XSS vulnerabilities on the Internet. It is helpful for understanding how to detect SQL injection and XSS by automatic tool.
+This is simple web application fuzzer for scanning SQL injection and XSS vulnerabilities on the Internet. Although many commercial or open-source web scanning tools available on the internet such as: [Acunetix](https://www.acunetix.com/), [arachni](http://www.arachni-scanner.com/)... However its sources are complicated for dummy web pentester. Thus, this tool provides:
 
-## User guide
+- A simplest way to understanding how the automatic tool detects SQL injection and XSS.
+- Design a simple crawler and use it for testing vulnerability.
+- A fuzzing method on query value parameters in URL.
 
-This program uses python 3. I recommend using virtualenv for testing purpose. To check our python enviroment, you can use the following commands:
+
+## Installation
+
+This program uses python 3.x. I recommend using virtualenv for testing purpose. To check our python enviroment, you can use the following commands:
 
 ```
 $ python3 --version
@@ -16,7 +21,7 @@ pip 9.0.1 from /usr/local/lib/python3.5/dist-packages (python 3.5)
 
 ### Requirements packages:
 
-BeautifulSoup are used for parsing HTML content. You can install it by command:
+This program uses BeautifulSoup for parsing HTML content. You can install it by command:
 ```
 pip3 install bs4
 ```
@@ -50,4 +55,4 @@ python3 scan_cli.py --seedurl http://example.com --engine xss
 
 ## Notes
 
-If you want to know how crawler works. You have to modify `seed_url` line 89 in file crawler, then you can run `python3 crawler.py` to see what happened.
+If you want to know how crawler works. You can modify `seed_url` line 89 in file crawler and run `python3 crawler.py` to see what happened.
