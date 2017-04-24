@@ -1,15 +1,15 @@
 # Simple web scanner
 
-This is simple web application fuzzer for scanning SQL injection and XSS vulnerabilities on the Internet. Although many commercial or open-source web scanning tools available on the internet such as: [Acunetix](https://www.acunetix.com/), [arachni](http://www.arachni-scanner.com/)... However its sources are complicated for dummy web pentester. Thus, this tool provides:
+This is simple web application fuzzing tool for scanning SQL injection and XSS vulnerabilities on the Internet. Although many commercial or open-source web scanning tools are available on the internet such as: [Acunetix](https://www.acunetix.com/), [arachni](http://www.arachni-scanner.com/)... However its sources are complicated for dummy web pentester. Thus, this tool provides:
 
-- A simplest way to understanding how the automatic tool detects SQL injection and XSS.
+- The simplest way to understanding how the automatic tool detects SQL injection and XSS.
 - Design a simple crawler and use it for testing vulnerability.
 - A fuzzing method on query value parameters in URL.
 
 
 ## Installation
 
-This program uses python 3.x. I recommend using virtualenv for testing purpose. To check our python enviroment, you can use the following commands:
+This program uses python 3.x. `virtualenv` is recommended for testing purpose. To check your python environment, you can use the following commands:
 
 ```
 $ python3 --version
